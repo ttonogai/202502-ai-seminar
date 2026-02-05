@@ -1,0 +1,76 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" style="background: #0f1419;">
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#0f1419"/>
+  
+  <!-- Header -->
+  <defs>
+    <linearGradient id="kiroIntroGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B7BD8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glowEffect" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8B7BD8;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8B7BD8;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect x="0" y="0" width="1920" height="100" fill="url(#kiroIntroGradient)"/>
+  
+  <!-- Background glow effect -->
+  <circle cx="960" cy="540" r="400" fill="url(#glowEffect)"/>
+  
+  <!-- Main title -->
+  <text x="960" y="280" text-anchor="middle" fill="url(#kiroIntroGradient)" font-family="Arial, sans-serif" font-size="96" font-weight="bold">
+    🚀 それでは始めましょう！
+  </text>
+  
+  <!-- Kiro section -->
+  <rect x="360" y="380" width="1200" height="180" rx="20" fill="#2d3748" stroke="#8B7BD8" stroke-width="4"/>
+  <text x="960" y="450" text-anchor="middle" fill="#8B7BD8" font-family="Arial, sans-serif" font-size="56" font-weight="bold">
+    Kiro ハンズオン体験
+  </text>
+  <text x="960" y="490" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="32">
+    バイブコーディングを実際に体験してみよう
+  </text>
+  <text x="960" y="530" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="24">
+    自然言語でプログラミング - 思考をそのままコードに
+  </text>
+  
+  <!-- Instructions -->
+  <g transform="translate(960, 700)">
+    <!-- What we'll experience -->
+    <g transform="translate(-350, 0)">
+      <rect x="-250" y="-60" width="500" height="160" rx="15" fill="#1a202c" stroke="#8B7BD8" stroke-width="3"/>
+      <text x="0" y="-20" text-anchor="middle" fill="#8B7BD8" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+        💬 自然言語で指示
+      </text>
+      <text x="0" y="20" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24">
+        「〇〇みたいなサイト作って」
+      </text>
+      <text x="0" y="55" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24">
+        「構成図描いて」
+      </text>
+    </g>
+    
+    <g transform="translate(350, 0)">
+      <rect x="-250" y="-60" width="500" height="160" rx="15" fill="#1a202c" stroke="#8B7BD8" stroke-width="3"/>
+      <text x="0" y="-20" text-anchor="middle" fill="#8B7BD8" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+        ⚡ 即座にコード生成
+      </text>
+      <text x="0" y="20" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24">
+        思考がコードになる瞬間
+      </text>
+      <text x="0" y="55" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24">
+        を体験してみましょう
+      </text>
+    </g>
+  </g>
+  
+  <!-- Call to action -->
+  <rect x="460" y="860" width="1000" height="80" rx="15" fill="url(#kiroIntroGradient)" opacity="0.2"/>
+  <rect x="460" y="860" width="1000" height="80" rx="15" fill="none" stroke="url(#kiroIntroGradient)" stroke-width="3"/>
+  <text x="960" y="910" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+    💻 バイブコーディングで新しい開発体験を！
+  </text>
+  
+</svg>

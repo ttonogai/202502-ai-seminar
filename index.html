@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS AIソリューション ハンズオンセミナー</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f1419;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        
+        .presentation-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .slide {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        .slide svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            background: rgba(255, 107, 53, 0.8);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        
+        .nav-btn:hover {
+            background: rgba(255, 107, 53, 1);
+        }
+        
+        .nav-btn:disabled {
+            background: rgba(128, 128, 128, 0.5);
+            cursor: not-allowed;
+        }
+        
+        .slide-counter {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        
+        .keyboard-help {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #a0aec0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <div class="slide active">
+            <iframe src="slide01_title.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide02_kiro.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide02b_vibe_coding_handson.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide03_quicksuite.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide04_genu.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide05_summary.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide06_kiro_handson_intro.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide07_handson_phase1.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide08_handson_phase2.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide09_handson_phase3.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide10_genu_handson.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+    <div class="keyboard-help">
+        キーボード操作: ← → または Space/Backspace
+    </div>
+    
+    <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">11</span>
+    </div>
+    
+    <div class="navigation">
+        <button class="nav-btn" id="prev-btn" onclick="previousSlide()">← 前へ</button>
+        <button class="nav-btn" id="next-btn" onclick="nextSlide()">次へ →</button>
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length; // 11 slides now
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+            
+            // Update navigation buttons
+            document.getElementById('prev-btn').disabled = currentSlide === 0;
+            document.getElementById('next-btn').disabled = currentSlide === totalSlides - 1;
+        }
+        
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                showSlide(currentSlide + 1);
+            }
+        }
+        
+        function previousSlide() {
+            if (currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            switch(e.key) {
+                case 'ArrowRight':
+                case ' ':
+                    e.preventDefault();
+                    nextSlide();
+                    break;
+                case 'ArrowLeft':
+                case 'Backspace':
+                    e.preventDefault();
+                    previousSlide();
+                    break;
+                case 'Home':
+                    e.preventDefault();
+                    showSlide(0);
+                    break;
+                case 'End':
+                    e.preventDefault();
+                    showSlide(totalSlides - 1);
+                    break;
+            }
+        });
+        
+        // Initialize
+        document.getElementById('total-slides').textContent = totalSlides;
+        showSlide(0);
+    </script>
+</body>
+</html>
