@@ -23,57 +23,63 @@
   <!-- Development Evolution -->
   <g transform="translate(100, 280)">
     <text x="0" y="40" fill="#8B7BD8" font-family="Arial, sans-serif" font-size="36" font-weight="bold">
-      開発手法の進化
+      開発の主役の変化
     </text>
     
     <!-- Manual Coding -->
-    <rect x="0" y="70" width="560" height="140" rx="10" fill="#2d3748" stroke="#666" stroke-width="2"/>
-    <text x="30" y="105" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
-      🖊️ 従来の開発
+    <rect x="0" y="70" width="560" height="180" rx="10" fill="#2d3748" stroke="#666" stroke-width="2"/>
+    <text x="30" y="100" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+      🖊️ コード中心の開発（従来）
     </text>
-    <text x="30" y="135" fill="#a0aec0" font-family="Arial, sans-serif" font-size="20">
-      • 手動コーディング中心
+    <text x="30" y="145" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+      人がすべてを書く世界
     </text>
-    <text x="30" y="160" fill="#a0aec0" font-family="Arial, sans-serif" font-size="20">
-      • 時間がかかる、ミスが多い
+    <text x="30" y="175" fill="#a0aec0" font-family="Arial, sans-serif" font-size="24">
+      • 人が How を考え、実装する
     </text>
-    <text x="30" y="185" fill="#a0aec0" font-family="Arial, sans-serif" font-size="20">
-      • プロトタイプから本格運用まで長期間
+    <text x="30" y="205" fill="#a0aec0" font-family="Arial, sans-serif" font-size="24">
+      • 試行錯誤・手戻りが前提
+    </text>
+    <text x="30" y="235" fill="#a0aec0" font-family="Arial, sans-serif" font-size="24">
+      • 成果はコードに閉じる
     </text>
     
     <!-- Agentic Development -->
-    <rect x="580" y="70" width="560" height="140" rx="10" fill="#2d3748" stroke="#8B7BD8" stroke-width="2"/>
-    <text x="610" y="105" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
-      🤖 Agentic開発
+    <rect x="580" y="70" width="560" height="180" rx="10" fill="#2d3748" stroke="#8B7BD8" stroke-width="2"/>
+    <text x="610" y="100" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+      🤖 AI中心の開発（Agentic開発）
     </text>
-    <text x="610" y="135" fill="#a0aec0" font-family="Arial, sans-serif" font-size="20">
-      • AIエージェントとの協業
+    <text x="610" y="145" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+      AIと一緒に作る世界
     </text>
-    <text x="610" y="160" fill="#a0aec0" font-family="Arial, sans-serif" font-size="20">
-      • 構造化された開発プロセス
+    <text x="610" y="175" fill="#a0aec0" font-family="Arial, sans-serif" font-size="24">
+      • How をAIと分担する
     </text>
-    <text x="610" y="185" fill="#8B7BD8" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
-      • Kiroが実現する新しい開発体験
+    <text x="610" y="205" fill="#a0aec0" font-family="Arial, sans-serif" font-size="24">
+      • 調査・実装・修正をエージェントが支援
+    </text>
+    <text x="610" y="235" fill="#a0aec0" font-family="Arial, sans-serif" font-size="24">
+      • 開発スピードは向上する
     </text>
     
     <!-- Spec-Driven -->
-    <rect x="1160" y="70" width="560" height="140" rx="10" fill="#2d3748" stroke="#8B7BD8" stroke-width="2"/>
-    <text x="1190" y="105" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
-      📋 仕様駆動開発
+    <rect x="1160" y="70" width="560" height="180" rx="10" fill="#2d3748" stroke="#8B7BD8" stroke-width="2"/>
+    <text x="1190" y="100" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+      📋 仕様中心の開発（Kiro）
     </text>
-    <text x="1190" y="135" fill="#a0aec0" font-family="Arial, sans-serif" font-size="20">
-      • 実行可能な仕様から開発
+    <text x="1190" y="145" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+      仕様が、そのまま動く世界
     </text>
-    <text x="1190" y="160" fill="#a0aec0" font-family="Arial, sans-serif" font-size="20">
-      • プロトタイプから本格運用へ
+    <text x="1190" y="175" fill="#a0aec0" font-family="Arial, sans-serif" font-size="24">
+      • 人は What だけを定義する
     </text>
-    <text x="1190" y="185" fill="#8B7BD8" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
-      • Kiroの核となる機能
+    <text x="1190" y="205" fill="#a0aec0" font-family="Arial, sans-serif" font-size="24">
+      • Kiroが仕様を理解し、実装を実行
     </text>
   </g>
   
   <!-- Kiro Features -->
-  <g transform="translate(100, 520)">
+  <g transform="translate(100, 580)">
     <text x="0" y="30" fill="#8B7BD8" font-family="Arial, sans-serif" font-size="36" font-weight="bold">
       Kiroの主要機能
     </text>
@@ -107,7 +113,7 @@
   </g>
   
   <!-- Business Impact -->
-  <g transform="translate(800, 520)">
+  <g transform="translate(800, 580)">
     <text x="0" y="30" fill="#8B7BD8" font-family="Arial, sans-serif" font-size="36" font-weight="bold">
       ビジネスインパクト
     </text>
@@ -141,12 +147,9 @@
   </g>
   
   <!-- Call to Action -->
-  <rect x="100" y="890" width="1720" height="80" rx="10" fill="#2d3748" stroke="#8B7BD8" stroke-width="3"/>
-  <text x="960" y="920" text-anchor="middle" fill="#8B7BD8" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
-    🌟 Agentic開発で開発の未来を体験
-  </text>
-  <text x="960" y="950" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24">
-    構造化された開発プロセスで、プロトタイプから本格運用まで加速
+  <rect x="100" y="950" width="1720" height="80" rx="10" fill="#2d3748" stroke="#8B7BD8" stroke-width="3"/>
+  <text x="960" y="995" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="36" font-weight="bold">
+    人はWhatを決める。HowはKiroが実行する。
   </text>
   
 </svg>
