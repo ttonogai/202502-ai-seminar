@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS AIソリューション ハンズオンセミナー</title>
+    <title>AWS AIソリューション 体験会</title>
     <style>
         body {
             margin: 0;
@@ -97,6 +97,15 @@
             <iframe src="slide01_title.svg" width="100%" height="100%" frameborder="0"></iframe>
         </div>
         <div class="slide">
+            <iframe src="slide01b_connection_info.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide01c_quicksuite_connection.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="slide01d_genu_connection.svg" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="slide">
             <iframe src="slide02_kiro.svg" width="100%" height="100%" frameborder="0"></iframe>
         </div>
         <div class="slide">
@@ -133,7 +142,7 @@
     </div>
     
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">11</span>
+        <span id="current-slide">1</span> / <span id="total-slides">14</span>
     </div>
     
     <div class="navigation">
@@ -144,33 +153,37 @@
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length; // 11 slides now
+        const totalSlides = slides.length;
+        
+        console.log('Total slides found:', totalSlides);
         
         function showSlide(n) {
+            console.log('showSlide called with n =', n, 'currentSlide =', currentSlide);
             slides[currentSlide].classList.remove('active');
             currentSlide = (n + totalSlides) % totalSlides;
             slides[currentSlide].classList.add('active');
+            console.log('Now showing slide:', currentSlide + 1);
             
             document.getElementById('current-slide').textContent = currentSlide + 1;
             
-            // Update navigation buttons
             document.getElementById('prev-btn').disabled = currentSlide === 0;
             document.getElementById('next-btn').disabled = currentSlide === totalSlides - 1;
         }
         
         function nextSlide() {
+            console.log('nextSlide called, currentSlide =', currentSlide);
             if (currentSlide < totalSlides - 1) {
                 showSlide(currentSlide + 1);
             }
         }
         
         function previousSlide() {
+            console.log('previousSlide called, currentSlide =', currentSlide);
             if (currentSlide > 0) {
                 showSlide(currentSlide - 1);
             }
         }
         
-        // Keyboard navigation
         document.addEventListener('keydown', function(e) {
             switch(e.key) {
                 case 'ArrowRight':
@@ -194,7 +207,6 @@
             }
         });
         
-        // Initialize
         document.getElementById('total-slides').textContent = totalSlides;
         showSlide(0);
     </script>
