@@ -28,7 +28,9 @@
   <!-- Connection URL Section -->
   <rect class="box" x="200" y="200" width="1520" height="120"/>
   <text class="label" x="240" y="250">URL:</text>
-  <text class="url" x="240" y="295">https://d27hf1k0jfx5ie.cloudfront.net/</text>
+  <a href="https://d27hf1k0jfx5ie.cloudfront.net/" target="_blank">
+    <text class="url" x="240" y="295" style="cursor: pointer;">https://d27hf1k0jfx5ie.cloudfront.net/</text>
+  </a>
   
   <!-- Copy button for URL -->
   <g class="copy-btn" onclick="copyToClipboard('https://d27hf1k0jfx5ie.cloudfront.net/')">
