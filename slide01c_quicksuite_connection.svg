@@ -57,7 +57,7 @@
   <rect class="box" x="200" y="500" width="1520" height="130"/>
   <text class="label" x="240" y="545">ユーザ名:</text>
   <text class="value" x="550" y="545">handson-00XX-aws-linked@aws-networld.jp</text>
-  <text class="label" x="550" y="585" font-size="28px">(座席番号)</text>
+  <text class="label" x="550" y="585" font-size="28px">(座席番号+10)</text>
   
   <!-- Copy button for Username -->
   <g class="copy-btn" onclick="copyToClipboard('handson-00XX-aws-linked@aws-networld.jp')">
