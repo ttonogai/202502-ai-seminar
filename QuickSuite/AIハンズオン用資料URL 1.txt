@@ -1,0 +1,78 @@
+
+・生成AI体験会資料URL
+
+https://ttonogai.github.io/202502-ai-seminar/
+
+・Quick Suiteサインイン情報
+Amzon Quick Suite URL
+
+https://aws.amazon.com/jp/quicksuite/
+
+アカウント名
+Networld-AI
+
+ユーザーネーム
+handson-00XX-aws-linked@aws-networld.jp
+※XXに10~25からの指定された数字に変換して入力してください。
+
+パスワード
+Networld02!
+
+
+
+
+1.Space組織の知識を資産化
+
+ダッシュボード名:sales_sample_dashboad_2026_XXXX
+※XXXXには本日の日付を入力してください。
+
+スペース名:サンプル売上_2026_XXXX
+※XXXXには本日の日付を入力してください。
+
+【プロンプト例】
+売上データを分析したい。ダッシュボードへのリンクを教えて
+
+カテゴリ別の売り上げを円グラフで作成してください。
+
+
+2.Flows データ探索業務の自動化
+
+
+【プロンプト例】
+https://registry.opendata.aws/ で様々な業界のAWSサービスを使用したユースケースを検索して、
+ドキュメントを生成するフローを作成してほしいです。入力する情報として、
+AWSサービスと、業界を入力できるようにし、アウトプットに関しては、日本語で出力するようにしてください。
+
+3.Chat Agentを活用して情報収集資料URL
+下記リンクよりPDFを保存してください。
+https://d1.awsstatic.com/legal/awsserviceterms/AWS_Service_Terms_2025-08-15_JA-JP.pdf
+
+プロンプト例
+AWSを使って、AIを使いたいんだけど、どんな点に気を付ければいいでしょうか
+
+再学習に使われないようにすることはできますか
+
+
+4.自分専用のAI Agentを作ろう
+
+・MCP設定情報
+名前、説明:
+AWS Knowledge Base
+MCPサーバエンドポイント:
+https://knowledge-mcp.global.api.aws
+
+【プロンプト例】
+私は社内の役員のためにAWSの質問に答えるチャットエージェントが欲しいです、
+AWSに関する質問は、AWS Knowledge MCPを使ってできるようにする必要があります。
+トーンはビジネスにあったものであるべきです。
+
+Quick Suite を使ってみたいんだけど、新しい新サービスなのでよくわかりません。
+MCPを使って最新情報を調べて教えて。
+
+
+
+
+
+
+
+
