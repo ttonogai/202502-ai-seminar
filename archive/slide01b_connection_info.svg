@@ -73,10 +73,10 @@
   <!-- Password Section -->
   <rect class="box" x="200" y="740" width="1520" height="100"/>
   <text class="label" x="240" y="795">パスワード:</text>
-  <text class="value" x="500" y="795">Networld02!</text>
+  <text class="value" x="500" y="795">Password</text>
   
   <!-- Copy button for Password -->
-  <g class="copy-btn" onclick="copyToClipboard('Networld02!')">
+  <g class="copy-btn" onclick="copyToClipboard('Password')">
     <rect x="1500" y="760" width="180" height="60" rx="8" fill="#1a202c" stroke="#8B7BD8" stroke-width="2"/>
     <text x="1590" y="795" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
       📋 コピー
